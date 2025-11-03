@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="">
+  <!-- Section perbandingan 1 -->
+  <!-- <section id="home" class="flex justify-center pt-36">
+    <div class="container">
+      <div class="flex flex-wrap bg-violet-400">
+        <div class="w-full self-center px-9 lg:w-1/2 bg-red-400">
+          <h1 class="text-base font-semibold text-green-400 md:text-xl">Halo Semua&nbsp;🖐, saya <span
+              class="block font-bold tracking-wider text-4xl lg:text-5xl mt-1 text-black">Muhamad Yaldriyan</span></h1>
+          <h2 class="font-medium text-slate-500 text-lg lg:text-2xl mb-5">Frontend Developer & <span
+              class="text-slate-950 font-semibold">Admin General</span></h2>
+          <p class="font-medium text-slate-400 leading-relaxed mb-10">Belajar web programming itu mudah dan
+            menyenangkan.
+            <span class=" text-black font-bold">Bukan !</span>
+          </p>
+          <a href="#"
+            class="text-base font-semibold text-white bg-primary/80 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition-all duration-300 ease-in-out">Hubungi
+            Saya</a>
+        </div>
+        <div class="w-full self-end px-4 lg:w-1/2 bg-yellow-200">
+          <div class="mt-2 lg:mt-0 lg:right-0 relative">
+            <img class="max-w-full mx-auto rounded-2xl object-cover scale-75" src="../img/Mypic.png" alt="Richard"
+              srcset="">
+            <span class="absolute bottom-20 left-1/2 -translate-x-1/2 -z-10 md:scale-100 xl:scale-120">
+              <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#14b8a6"
+                  d="M54.1,-48.4C56.3,-40.4,34.8,-18.7,25.5,-0.7C16.2,17.2,19,31.3,12.1,40.5C5.3,49.6,-11.3,53.8,-17.6,46.9C-23.8,39.9,-19.7,21.7,-27,2.5C-34.3,-16.7,-53,-36.9,-50.4,-45.1C-47.8,-53.2,-23.9,-49.2,1,-50C25.9,-50.8,51.9,-56.4,54.1,-48.4Z"
+                  transform="translate(90 100) scale(1.5) " />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- navbar start -->
+  <header
+    class="md:px-20 lg:pl-32 bg-transparent absolute top-0 left-0 w-full flex flex-wrap lg:flex-nowrap xl:flex-wrap items-center justify-between z-10 lg:gap-36 xl:gap-0 ">
+    <div class="w-1/2 pl-7 flex items-center relative">
+      <a href="#home" class="font-bold text-primary block py-6">muhamadyaldriyan</a>
+    </div>
+    <div class="w-1/2 lg:w-full xl:w-1/2 flex items-center lg: relative">
+      <button id="hamburger" name="humberger" type="button" class="absolute right-4 lg:hidden">
+        <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
+        <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
+        <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
+      </button>
+      <nav id="nav-menu"
+        class="md:leading-7 hidden lg:flex absolute lg:static bg-white lg:bg-transparent shadow-lg lg:shadow-none rounded-lg py-5 w-full max-w-62.5 lg:max-w-full top-full">
+        <ul class="block lg:flex lg:justify-center lg:gap-4 xl:gap-10">
+          <li class="group">
+            <a href="#home"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0  group-hover:text-primary">Beranda</a>
+          </li>
+          <li class="group">
+            <a href="#About"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Tentang Saya</a>
+          </li>
+          <li class="group">
+            <a href="#Portfolio"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Portfolio</a>
+          </li>
+          <li class="group">
+            <a href="#Clients"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Clients</a>
+          </li>
+          <li class="group">
+            <a href="#Blog"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Blog</a>
+          </li>
+          <li class="group">
+            <a href="#Contact"
+              class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- navbar end -->
+
+  <!-- Section perbandingan 2 -->
+  <section id="Home" class="md:px-20 lg:px-32 md:flex flex-wrap items-center pt-36 relative">
+    <div class="w-full lg:w-[50%] pl-7 ">
+      <h1 class="font-semibold text-base text-primary md:text-xl">Halo semuanya,🖐 saya <span
+          class="block font-bold text-black tracking-wider text-4xl lg:text-5xl mt-1">Richard Mikaell</span></h1>
+      <h2 class="font-medium text-slate-500 text-lg lg:text-2xl mb-5">Frontend Developer & <span
+          class="font-semibold text-black">Admin General</span></h2>
+      <p class="font font-medium text-slate-400 leading-relaxed mb-9">Mencapai tujuan butuh perjuangan yang tidak mudah,
+        <span class="font-bold text-black">bukan !</span>
+      </p>
+      <a href="#"
+        class="bg-primary text-amber-50 font-semibold rounded-full px-4 py-3 cursor-pointer hover:opacity-80 transition-all duration-300 ease-in-out hover:">
+        Hubungi saya
+      </a>
+    </div>
+    <div class="flex justify-center items-center rounded-full w-full lg:w-1/2 relative lg:right-0">
+      <img src="/dist/img/Mypic.png" alt="Mypic" class="rounded-full object-cover object-center scale-75">
+      <span class="absolute bottom-2 left-1/2 -translate-x-1/2 -z-10 md:scale-100 xl:scale-120">
+        <svg width="400px" class="text-primary" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#14b8a6"
+            d="M39.4,-18.7C44.9,4.1,38.9,24.7,22.8,37.9C6.7,51.1,-19.5,57,-39.8,44.6C-60.1,32.3,-74.5,1.7,-66.9,-24C-59.3,-49.6,-29.6,-70.4,-6.3,-68.3C16.9,-66.3,33.9,-41.4,39.4,-18.7Z"
+            transform="translate(100 100) scale(1.2)" />
+        </svg>
+      </span>
+    </div>
+  </section>
+
+  <!-- Section about -->
+  <section id="About" class="flex flex-wrap md:px-20 lg:px-32 mt-20">
+    <div class="self-center pl-7 lg:w-1/2">
+      <h1 class="text-primary font-bold uppercase mb-2">Tentang saya</h1>
+      <h2 class="font-bold text-black text-2xl mb-5 sm:max-w-md lg:max-w-xl lg:text-4xl">Yuk, kita gapai mimpi bersama
+        inovasi youth
+        generation!</h2>
+      <p class="font-semibold text-slate-500 mb-5 lg:text-lg lg:max-w-xl xl:max-w-153.75">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit.
+        Quam
+        praesentium eius culpa enim deleniti! A,
+        nobis.</p>
+
+
+
+
+    </div>
+    <div class="w-full lg:w-1/2 pl-7">
+      <h3 class="font-semibold text-dark text-xl mb-5 lg:text-3xl lg:pt-10">Mari berteman</h3>
+      <p class="font-semibold text-slate-500 mb-5 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Obcaecati
+        tempore ipsam quisquam
+        quae voluptates, amet dignissimos! Officiis ratione molestias enim.
+      </p>
+      <div class="flex items-center gap-5 lg:w-1/2">
+        <a href="https://youtube.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-dark hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>YouTube</title>
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://Instagram.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-dark hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>Instagram</title>
+            <path
+              d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+          </svg>
+
+        </a>
+        <a href="https://github.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-dark hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>GitHub</title>
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://whatsapp.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-dark hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>WhatsApp</title>
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Section about End -->
+
+  <!-- Portfolio Start -->
+  <section id="Portfolio" class="pt-15  pb-16 bg-slate-100">
+    <div class="w-full px-4 max-w-xl mx-auto text-center">
+      <h4 class="text-primary font-bold text-lg">Portfolio</h4>
+      <h2 class="text-dark font-bold text-3xl  sm:text-4xl lg:text-5xl mb-5">Project Terbaru</h2>
+      <p class="text-slate-500 font-medium text-base md:text-lg leading-relaxed">Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Officia repellendus consequuntur tempore temporibus fugit? Blanditiis dolores nisi, rem
+        ducimus aut ab a distinctio quae modi?</p>
+    </div>
+    <div class="w-full px-4 flex flex-wrap xl:w-8/12 xl:mx-auto">
+      <div class="mb-12 p-4 md:w-1/2">
+        <div class="rounded-md shadow-md overflow-hidden">
+          <img src="/dist/img/portfolio/1.png" alt="Angkot_Project" class="object-bottom" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-black mt-5 mb-3">Angkot Interface By Yaldriyan</h3>
+        <p class="font-medium text-slate-500 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Mollitia aperiam sint, minus quae dicta odit sed totam nulla quaerat, iste vero soluta molestias illum
+          similique.</p>
+      </div>
+      <div class="mb-12 p-4 md:w-1/2">
+        <div class="rounded-md shadow-md overflow-hidden">
+          <img src="/dist/img/portfolio/2.png" alt="Suit-Jawa" class="object-bottom" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-black mt-5 mb-3">Suit-Jawa Games Interface By Yaldriyan</h3>
+        <p class="font-medium text-slate-500 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Mollitia aperiam sint, minus quae dicta odit sed totam nulla quaerat, iste vero soluta molestias illum
+          similique.</p>
+      </div>
+      <div class="mb-12 p-4 md:w-1/2">
+        <div class="rounded-md shadow-md overflow-hidden">
+          <img src="/dist/img/portfolio/3.png" alt="Search IMDB Films" class="object-bottom" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-black mt-5 mb-3">Search Imdb with Promise Fetch Interface By Yaldriyan
+        </h3>
+        <p class="font-medium text-slate-500 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Mollitia aperiam sint, minus quae dicta odit sed totam nulla quaerat, iste vero soluta molestias illum
+          similique.</p>
+      </div>
+      <div class="mb-12 p-4 md:w-1/2">
+        <div class="rounded-md shadow-md overflow-hidden">
+          <img src="/dist/img/portfolio/4.png" alt="Project" class="object-bottom" width="w-full">
+        </div>
+        <h3 class="font-semibold text-xl text-black mt-5 mb-3">Interface By Yaldriyan</h3>
+        <p class="font-medium text-slate-500 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Mollitia aperiam sint, minus quae dicta odit sed totam nulla quaerat, iste vero soluta molestias illum
+          similique.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Portfolio End -->
+
+  <!-- Clients Start -->
+  <section id="Clients" class="pt-15 pb-32 bg-slate-700">
+    <div class="w-full px-4 max-w-md sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto text-center">
+      <h4 class="text-primary font-bold text-lg">Clients</h4>
+      <h2 class="text-white font-bold text-3xl sm:text-4xl lg:text-5xl mb-5">Yang Pernah Bekerjasama</h2>
+      <p class="text-slate-500 font-medium text-base md:text-lg leading-relaxed">Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Officia repellendus consequuntur tempore temporibus fugit? Blanditiis dolores nisi, rem
+        ducimus aut ab a distinctio quae modi?</p>
+    </div>
+
+    <div class="w-full sm:max-w-96 md:max-w-full mx-auto px-4 flex flex-wrap items-center justify-center">
+      <a href=""
+        class="max-w-30 mx-4 lg:mx-6 xl:mx-8 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 ">
+        <img src="/dist/img/Clients/Google_2015_logo.svg" alt="" class="">
+      </a>
+      <a href=""
+        class="max-w-30 mx-4 lg:mx-6 xl:mx-8 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 text-white ">
+        <img src="/dist/img/Clients/Gojek_logo_2019.svg" alt="" class="">
+      </a>
+      <a href=""
+        class="max-w-30 mx-4 lg:mx-6 xl:mx-8 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 ">
+        <img width="50" src="/dist/img/Clients/Shopee_logo.svg" alt="" class="">
+      </a>
+      <a href=""
+        class="max-w-30 mx-4 lg:mx-6 xl:mx-8 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 ">
+        <img src="/dist/img//Clients/Tokopedia.svg" alt="" class="">
+      </a>
+    </div>
+  </section>
+
+  <!-- Blog Start -->
+  <section id="Blog" class="pt-15 pb-32 bg-slate-200">
+    <div class="w-full max-w-xl mx-auto px-4 text-center mb-5">
+      <h4 class="text-primary font-bold text-lg ">Blog</h4>
+      <h2 class="text-dark font-bold text-4xl mb-5">Tulisan Terkini</h2>
+      <p class="text-slate-500 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo
+        delectus officia voluptas placeat, veritatis iure adipisci totam porro perspiciatis. Totam, minima dolor!
+        Laboriosam, natus.</p>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+          <img src="https://picsum.photos/id/2/800/250?blur=5" alt="" class="w-full h-72 object-cover object-bottom">
+          <div class="py-8 px-6">
+            <h3 class="">
+              <a href="#" class="block text-dark font-semibold text-xl mb-3 hover:text-primary truncate">Tips Learning
+                Programming</a>
+            </h3>
+            <p class="text-slate-500 font-semibold text-base mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Delectus, animi numquam assumenda quibusdam doloremque rerum repellendus?</p>
+            <a href="#" class="bg-primary rounded-md text-white font-medium text-sm py-3 px-6 hover:opacity-80">Baca
+              Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+          <img src="./dist/img/Blog/React.jpg" alt="" class="w-full h-72 object-cover object-top">
+          <div class="py-8 px-6">
+            <h3 class="">
+              <a href="#" class="block text-dark font-semibold text-xl mb-3 hover:text-primary truncate">Tips My Journey
+                on REACT</a>
+            </h3>
+            <p class="text-slate-500 font-semibold text-base mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Delectus, animi numquam assumenda quibusdam doloremque rerum repellendus?</p>
+            <a href="#" class="bg-primary rounded-md text-white font-medium text-sm py-3 px-6 hover:opacity-80">Baca
+              Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+          <img src="/dist/img/Blog/js.jpg" alt="Javascript" class="w-full h-72 object-cover object-center ">
+          <div class="py-8 px-6">
+            <h3 class="">
+              <a href="#" class="block text-dark font-semibold text-xl mb-3 hover:text-primary truncate">Vanilla JS</a>
+            </h3>
+            <p class="text-slate-500 font-semibold text-base mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Delectus, animi numquam assumenda quibusdam doloremque rerum repellendus?</p>
+            <a href="#" class="bg-primary rounded-md text-white font-medium text-sm py-3 px-6 hover:opacity-80">Baca
+              Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Blog End -->
+
+
+  <!-- Contact start -->
+  <section id="Contact" class="pt-15 pb-32 bg-slate-50">
+    <div class="w-full max-w-xl mx-auto px-4 text-center">
+      <h4 class="text-primary font-bold text-lg">Contact</h4>
+      <h2 class="text-dark font-bold text-4xl mb-5">Hubungi Kami</h2>
+      <p class="text-slate-500 font-semibold text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+        dolore maiores quos laudantium praesentium! Delectus vitae aliquid officiis ea animi.</p>
+    </div>
+    <form action="" method="post" class="w-full lg:w-2/3 xl:w-1/2 mx-auto">
+      <div class="w-full mt-10 px-7">
+        <label for="nama" class="block mb-5">
+          <span class="block text-primary font-bold">Nama</span>
+          <input type="text" id="fname" name="nama"
+            class="bg-slate-200 text-dark p-3 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary "
+            placeholder="Masukan Nama">
+        </label>
+      </div>
+      <div class="w-full mt-10 px-7">
+        <label for="email" class="block mb-5">
+          <span class="block text-primary font-bold">Email</span>
+          <input type="text" id="femail" name="email"
+            class="bg-slate-200 text-dark p-3 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary "
+            placeholder="">
+        </label>
+      </div>
+      <div class="w-full mt-10 px-7">
+        <label for="pesan" class="block mb-9">
+          <span class="block text-primary font-bold">Pesan</span>
+          <textarea type="text" id="fpesan" name="pesan"
+            class="bg-slate-200 text-dark p-3 h-32 w-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary "
+            placeholder="Masukan Nama"></textarea>
+        </label>
+      </div>
+      <div class="w-full px-7">
+        <input type="submit" value="Submit"
+          class="w-full bg-primary text-white font-semibold text-center px-3 py-2 text-sm rounded-full hover:opacity-80 hover:shadow-lg transition duration-500">
+      </div>
+    </form>
+  </section>
+  <!-- Contact end -->
+
+  <!-- footer start -->
+  <footer class="bg-slate-900 pt-24 pb-12">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/3  px-10 mb-12 font-medium text-slate-300">
+        <h2 class="font-bold text-4xl text-white mb-5">Muhamad Yaldriyan</h2>
+        <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
+        <p class="">muhamadyaldriyan@gmail.com</p>
+        <p class="">Jl. Warakas 01 xxx</p>
+        <p class="">Jakarta Utara</p>
+      </div>
+
+      <div class="w-full md:w-1/3 px-10 mb-12 mx-auto">
+        <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+        <ul class="text-slate-300">
+          <li>
+            <a href="#" class="inline-block text-base hover:text-primary mb-3">Programming</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block text-base hover:text-primary mb-3">React</a>
+          </li>
+          <li>
+            <a href="#" class="inline-block text-base hover:text-primary mb-3">Vanilla JS</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w-full md:w-1/3 px-10 mb-12 mx-auto">
+        <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+        <ul class="text-slate-300">
+          <li>
+            <a href="#Home" class="inline-block text-base hover:text-primary mb-3">Beranda</a>
+          </li>
+          <li>
+            <a href="#About" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+          </li>
+          <li>
+            <a href="#Portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+          </li>
+          <li>
+            <a href="#Clients" class="inline-block text-base hover:text-primary mb-3">Clients</a>
+          </li>
+          <li>
+            <a href="#Blog" class="inline-block text-base hover:text-primary mb-3">Blog</a>
+          </li>
+          <li>
+            <a href="#Contact" class="inline-block text-base hover:text-primary mb-3">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-10 border-t border-slate-700">
+      <div class="flex justify-center items-center gap-5 mb-5">
+        <a href="https://youtube.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-white hover:bg-primary hover:text-dark"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>YouTube</title>
+            <path
+              d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://Instagram.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-white hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>Instagram</title>
+            <path
+              d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+          </svg>
+
+        </a>
+        <a href="https://github.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-white hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>GitHub</title>
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://whatsapp.com"
+          class="flex justify-center items-center w-9 h-9 rounded-full border border-slate-300 text-white hover:bg-primary hover:text-white"
+          target="_blank">
+          <svg class="fill-current" role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>WhatsApp</title>
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+          </svg>
+        </a>
+      </div>
+
+      <p class="flex relative justify-center font-medium text-slate-500 text-sm text-center ">Created With <span
+          class="animate-bounce inline-flex">🔥</span> <a href="www.linkedin.com/in/muhamad-yaldriyan" target="_blank"
+          class="font-bold text-primary hover:opacity-80 transition-all duration-500">By Muhamad Yaldriyan</a>, Using<a
+          href="https://tailwindcss.com/" target="_blank" class="font-bold text-sky-500 ml-2 hover:opacity-80 transition duration-500">Tailwind CSS </a></p>
+
+      <!-- <div class="inline-flex items-center gap-2 text-white p-2 rounded">
+          <img src="https://via.placeholder.com/30" class="rounded-full"/>
+          <span>Rizky</span>
+        </div>
+        <span>Halo dunia</span> -->
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <script src="/dist/script.js"></script>
+
+</body>
+
+</html>

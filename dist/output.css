@@ -9,8 +9,7 @@
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-sky-500: oklch(68.5% 0.169 237.323);
@@ -235,6 +234,9 @@
   .right-4 {
     right: calc(var(--spacing) * 4);
   }
+  .right-20 {
+    right: calc(var(--spacing) * 20);
+  }
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
   }
@@ -301,6 +303,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mr-2 {
+    margin-right: calc(var(--spacing) * 2);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -343,6 +348,9 @@
   .table {
     display: table;
   }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -364,6 +372,9 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -372,6 +383,9 @@
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
+  }
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-full {
     width: 100%;
@@ -489,10 +503,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
@@ -514,12 +524,6 @@
   .border-white {
     border-color: var(--color-white);
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
-  }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
   .bg-primary {
     background-color: var(--color-primary);
   }
@@ -540,6 +544,9 @@
   }
   .bg-slate-200 {
     background-color: var(--color-slate-200);
+  }
+  .bg-slate-500 {
+    background-color: var(--color-slate-500);
   }
   .bg-slate-700 {
     background-color: var(--color-slate-700);
@@ -621,6 +628,12 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
+  .pt-0\.5 {
+    padding-top: calc(var(--spacing) * 0.5);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -791,6 +804,45 @@
       }
     }
   }
+  .peer-not-checked\:translate-x-0 {
+    &:is(:where(.peer):not(*:checked) ~ *) {
+      --tw-translate-x: calc(var(--spacing) * 0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .peer-checked\:translate-x-5 {
+    &:is(:where(.peer):checked ~ *) {
+      --tw-translate-x: calc(var(--spacing) * 5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .peer-checked\:transition-all {
+    &:is(:where(.peer):checked ~ *) {
+      transition-property: all;
+      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+      transition-duration: var(--tw-duration, var(--default-transition-duration));
+    }
+  }
+  .peer-checked\:duration-500 {
+    &:is(:where(.peer):checked ~ *) {
+      --tw-duration: 500ms;
+      transition-duration: 500ms;
+    }
+  }
+  .peer-hover\:bg-amber-400 {
+    &:is(:where(.peer):hover ~ *) {
+      @media (hover: hover) {
+        background-color: var(--color-amber-400);
+      }
+    }
+  }
+  .peer-hover\:opacity-80 {
+    &:is(:where(.peer):hover ~ *) {
+      @media (hover: hover) {
+        opacity: 80%;
+      }
+    }
+  }
   .hover\:animate-pulse {
     &:hover {
       @media (hover: hover) {
@@ -863,6 +915,24 @@
       }
     }
   }
+  .peer-not-checked\:hover\:bg-primary {
+    &:is(:where(.peer):not(*:checked) ~ *) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-primary);
+        }
+      }
+    }
+  }
+  .peer-checked\:hover\:bg-amber-400 {
+    &:is(:where(.peer):checked ~ *) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-amber-400);
+        }
+      }
+    }
+  }
   .focus\:border-primary {
     &:focus {
       border-color: var(--color-primary);
@@ -885,6 +955,26 @@
       outline-style: none;
     }
   }
+  .sm\:absolute {
+    @media (width >= 40rem) {
+      position: absolute;
+    }
+  }
+  .sm\:right-5 {
+    @media (width >= 40rem) {
+      right: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:w-\[50\%\] {
+    @media (width >= 40rem) {
+      width: 50%;
+    }
+  }
+  .sm\:max-w-52 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 52);
+    }
+  }
   .sm\:max-w-96 {
     @media (width >= 40rem) {
       max-width: calc(var(--spacing) * 96);
@@ -893,6 +983,11 @@
   .sm\:max-w-md {
     @media (width >= 40rem) {
       max-width: var(--container-md);
+    }
+  }
+  .sm\:justify-end {
+    @media (width >= 40rem) {
+      justify-content: flex-end;
     }
   }
   .sm\:text-4xl {
@@ -937,6 +1032,11 @@
   .md\:px-20 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:pl-28 {
+    @media (width >= 48rem) {
+      padding-left: calc(var(--spacing) * 28);
     }
   }
   .md\:text-lg {
@@ -1007,6 +1107,11 @@
       width: 50%;
     }
   }
+  .lg\:w-\[55\%\] {
+    @media (width >= 64rem) {
+      width: 55%;
+    }
+  }
   .lg\:w-full {
     @media (width >= 64rem) {
       width: 100%;
@@ -1037,9 +1142,19 @@
       justify-content: center;
     }
   }
+  .lg\:gap-3 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 3);
+    }
+  }
   .lg\:gap-4 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .lg\:gap-36 {
@@ -1065,6 +1180,11 @@
   .lg\:pl-32 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 32);
+    }
+  }
+  .lg\:pl-40 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 40);
     }
   }
   .lg\:text-2xl {
@@ -1154,6 +1274,11 @@
   .xl\:gap-10 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .dark\:bg-slate-900 {
+    &:where([data-theme=dark], [data-theme=dark] *) {
+      background-color: var(--color-slate-900);
     }
   }
 }

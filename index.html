@@ -15,7 +15,7 @@
     rel="stylesheet">
 </head>
 
-<body class="">
+<body class="dark:bg-slate-900">
   <!-- Section perbandingan 1 -->
   <!-- <section id="home" class="flex justify-center pt-36">
     <div class="container">
@@ -52,19 +52,19 @@
 
   <!-- navbar start -->
   <header
-    class="md:px-20 lg:pl-32 bg-transparent absolute top-0 left-0 w-full flex flex-wrap lg:flex-nowrap xl:flex-wrap items-center justify-between z-10 lg:gap-36 xl:gap-0 ">
-    <div class="w-1/2 pl-7 flex items-center relative">
+    class=" bg-transparent absolute top-0 left-0 w-full flex flex-wrap items-center  z-10 lg:gap-5">
+    <div class="sm:w-[50%] lg:[20%] pl-7 md:pl-28 lg:pl-40  lg flex items-center relative">
       <a href="#home" class="font-bold text-primary block py-6">muhamadyaldriyan</a>
     </div>
-    <div class="w-1/2 lg:w-full xl:w-1/2 flex items-center lg: relative">
-      <button id="hamburger" name="humberger" type="button" class="absolute right-4 lg:hidden hover:cursor-pointer">
+    <div class="w-[50%] lg:w-[55%] xl:w-1/2 flex sm:justify-end sm:absolute sm:right-5  mx-auto relative">
+      <button id="hamburger" name="humberger" type="button" class="  lg:hidden hover:cursor-pointer">
         <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
         <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
         <span class="hamburger-line transition-all duration-300 ease-in-out"> </span>
       </button>
       <nav id="nav-menu"
-        class="md:leading-7 hidden lg:flex absolute lg:static bg-white lg:bg-transparent shadow-lg lg:shadow-none rounded-lg py-5 w-full max-w-62.5 lg:max-w-full top-full">
-        <ul class="block lg:flex lg:justify-center lg:gap-4 xl:gap-10">
+        class="md:leading-7 bg-white absolute lg:static right-20 top-full hidden lg:flex lg:justify-center lg:bg-transparent shadow-lg lg:shadow-none rounded-lg py-5 w-full sm:max-w-52 lg:max-w-full ">
+        <ul class="block lg:flex lg:justify-center lg:gap-3 xl:gap-10">
           <li class="group">
             <a href="#Home"
               class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0  group-hover:text-primary">Beranda</a>
@@ -88,6 +88,19 @@
           <li class="group">
             <a href="#Contact"
               class="text-base font-semibold text-slate-500 py-2 mx-8 lg:mx-0 group-hover:text-primary">Contact</a>
+          </li>
+          <li class="group">
+            <div class="flex text-slate-500">
+              <span class="mr-2">Light</span>
+              <label for="dark-toggle" class="mt-1">
+                <div class="flex h-5 w-9 pt-0.5 cursor-pointer rounded-full bg-slate-500">
+                  <input type="checkbox" name="" id="dark-toggle" class="hidden peer">
+                  <div id="circle" class="toggle-circle h-4 w-4 rounded-full bg-white peer-checked:translate-x-5 transition-all duration-500 peer-not-checked:translate-x-0 peer-checked:hover:bg-amber-400 peer-not-checked:hover:bg-primary"></div>
+                </div>
+              </label>
+
+              <span class="ml-2">Dark</span>
+            </div>
           </li>
         </ul>
       </nav>
@@ -483,8 +496,12 @@
    <a href="#Home" id="to-top" class="justify-center hidden items-center bg-primary w-14 h-14 rounded-full p-4 fixed bottom-4 right-4 hover:animate-pulse">
     <span class="inline-block h-5 w-5 border-t-2 border-l-2 border-white rotate-45 hover:opacity-80 mt-2"></span>
    </a>
+
   <!-- Back to top end -->
 
+
+  <!-- Dark Mode Start -->
+  <!-- Dark Mode End -->
   <script src="./dist/script.js"></script>
 
 </body>

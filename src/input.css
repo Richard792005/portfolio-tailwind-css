@@ -4,6 +4,8 @@
 @theme {
   --font-inter : 'Inter', system-ui, sans-serif;
   --color-primary : #14b8a6;
+  --color-dark2 : #1A2A4F;
+  --color-dark3 : #090040;
   --color-dark : #222222;
   --container-center : true;
   --container-padding : 16px;
@@ -17,7 +19,7 @@
 
 @layer components {
   .hamburger-line {
-    @apply w-[1.875rem] h-0.5 my-2 block bg-dark;
+    @apply w-[1.875rem] h-0.5 my-2 block bg-dark dark:bg-white;
   }
 
   .hamburger-active > span:nth-child(1) {
@@ -38,6 +40,6 @@
 }
 
 .navbar-fixed {
-  @apply fixed z-9999 bg-white/10 backdrop-blur-sm shadow-[0_0_3px_1px_#222]
+  @apply fixed z-9999 bg-white/10 dark:bg-slate-800/50 backdrop-blur-sm shadow-[0_0_3px_1px_#222]
 
 }

@@ -11,8 +11,6 @@
   --container-padding : 16px;
   --breakpoint-2xl : 1320px;
   --breakpoint-sm : 380px;
-
-
 }
 
 @layer base {
